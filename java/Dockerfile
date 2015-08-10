@@ -6,10 +6,10 @@
 # https://github.com/dockerfile/java/tree/master/oracle-java7
 #
 
-MAINTAINER Hans J Schroeder "https://github.com/dvbportal"
-
 # Pull base image.
 FROM ubuntu:14.04
+
+MAINTAINER Hans J Schroeder "https://github.com/dvbportal"
 
 # Install Java.
 RUN \
