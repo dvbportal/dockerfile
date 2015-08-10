@@ -1,15 +1,19 @@
 #
 # Oracle Java 7 Dockerfile
 #
+# based on:
 # https://github.com/dockerfile/java
 # https://github.com/dockerfile/java/tree/master/oracle-java7
 #
+
+MAINTAINER Hans J Schroeder "https://github.com/dvbportal"
 
 # Pull base image.
 FROM ubuntu:14.04
 
 # Install Java.
 RUN \
+  export DEBIAN_FRONTEND=noninteractive && \
   echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
   apt-get install -y software-properties-common && \
   add-apt-repository -y ppa:webupd8team/java && \
