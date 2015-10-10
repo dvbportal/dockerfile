@@ -1,7 +1,7 @@
 #
 # Node.js Dockerfile
 #
-FROM jetlabs/python
+FROM jetlabs/python2.7
 
 MAINTAINER Hans J Schroeder "https://github.com/dvbportal"
 
